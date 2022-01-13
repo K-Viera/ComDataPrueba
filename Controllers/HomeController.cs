@@ -10,7 +10,7 @@ namespace ComDataPrueba.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index","Colaboradores");
         }
 
         public ActionResult About()
