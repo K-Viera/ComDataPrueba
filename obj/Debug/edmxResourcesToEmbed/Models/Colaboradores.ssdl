@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ComDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Colaboradores">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroIdentificacion" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Salario" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Ingreso" Type="date" Nullable="false" />
+    <Property Name="Sexo" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="Area" Type="varchar" MaxLength="55" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ComDataModelStoreContainer">
+    <EntitySet Name="Colaboradores" EntityType="Self.Colaboradores" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
